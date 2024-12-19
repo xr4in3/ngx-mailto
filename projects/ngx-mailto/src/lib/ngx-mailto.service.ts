@@ -56,7 +56,7 @@ export class NgxMailtoService {
       }
       if (value?.body) {
         // link += `?body=${value?.body}`;
-        properties.push(`body=${encodeURIComponent(value?.body)}`);
+        properties.push(`body=${value?.body}`);
       }
       if (properties.length > 0) {
         link += `?${properties.join('&')}`;
